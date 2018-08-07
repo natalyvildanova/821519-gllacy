@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/22/user/821519).
-* Наставник: `Неизвестно`.
+* Студент: [Nataly Vildanova](https://up.htmlacademy.ru/htmlcss/22/user/821519).
+* Наставник: [Andrey Rychagov](https://htmlacademy.ru/profile/id50483).
 
 ---
 
