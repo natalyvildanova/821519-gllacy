@@ -35,9 +35,15 @@
       <ul class="user-navigation">
         <li>
           <a href="#">Поиск</a>
+          <input type="text" name="product" placeholder="Что ищем?">
         </li>
         <li>
           <a href="#">Вход</a>
+          <input type="text" name="login" placeholder="Электронная почта">
+          <input type="password" name="password" placeholder="Пароль">
+          <input type="submit" value="Вход в личный кабинет">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </li>
         <li>
           <a href="#">Корзина</a>
@@ -113,7 +119,7 @@
     <div class="subscription">
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
         спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <span>Электронная почта</span>
+      <button type="submit" >Электронная почта</button>
     </div>
     <div class="map">
       <img src="http://placehold.it/150x100" width="180" height="180">
@@ -123,19 +129,19 @@
       <br> ул. Большая Конюшенная 19/8, Санкт-Петербург
       <br> Для заказов по телефону:
       <br> 8 812 450-25-25 (с 10 до 20 ежедневно)
-      <span>Форма обратной связи</span>
+      <button>Форма обратной связи</button>
     </div>
     <div class="Feedback">
       <p>Мы обязательно вам ответим!</p>
-      <span>Кнопка "закрыть окно"</span>
+      <button>Кнопка "закрыть окно"</button>
     <fieldset>
       <legend>Форма обратной связи</legend>
-      <input type="text" placeholder="Как вас зовут?">
-      <input type="text" placeholder="Ваша почта для ответа?">
-      <input type="text" placeholder="Напишите что-нибудь...">
+      <input type="text" name="username" placeholder="Как вас зовут?">
+      <input type="text" name="usermail" placeholder="Ваша почта для ответа?">
+      <input type="text" name="userfeedback" placeholder="Напишите что-нибудь...">
       
     </fieldset>
-    <span>Отправить</span>
+    <button type="submit">Отправить</button>
     </div>
 
   </main>
