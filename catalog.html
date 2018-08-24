@@ -78,19 +78,76 @@
           »<a href="#">Сливочное</a>
       </li>
       <h1>Сливочное мороженое</h1>
-      <div class="sorting">
-        <input type="text" list="sorting-item" name="sorting-item">
-        <datalist id="sorting-item">
-          <option value="по популярности">по популярности</option>
-          <option value="сначала недорогие">сначала недорогие</option>
-          <option value="сначала дорогие">сначала дорогие</option>
-          <option value="по жирности">по жирности</option>
-        </datalist>
-      </div>
-      <div class="price"></div>
-      <div class="fat-content"></div>
-      <div class="fillers"></div>
-      <button type="submit">Применить</button>
+      
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры товаров</h2>
+        <form class="filter" method="get" action="htts://">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <input type="text" list="sorting" name="sorting-item">
+            <datalist id="sorting">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </datalist>
+
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. – 500 руб.</legend>
+            <input type="range" min="100" max="500" step="5">
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="radio" name="product-group" value="zero-percent" id="zero">
+                <label for="zero">0%</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="product-group" value="ten-percent" id="ten" checked>
+                <label for="ten">до 10%</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="product-group" value="thirty-percent" id="thirty">
+                <label for="thirty">до 30%</label>
+              </li>
+              <li class="filter-option">
+                <input type="radio" name="product-group" value="to-thirty-percent" id="to-thirty">
+                <label for="to-thirty">выше 30%</label>
+              </li>
+            </ul>
+            
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label for="filter-chocolate">шоколадные</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="sugar-powders" id="filter-sugar-powders" checked>
+                <label for="filter-sugar-powders">сахарные присыпки</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="fruit" id="filter-fruit">
+                <label for="filter-fruit">фрукты</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="syrups" id="filter-syrups">
+                <label for="filter-syrups">сиропы</label>
+              </li>
+              <li class="filter-option">
+                <input type="checkbox" name="jams" id="filter-jams">
+                <label for="filter-jams">джемы</label>
+              </li>
+            </ul>
+            
+          </fieldset>
+          <button type="submit" class="filter-button button">Применить</button>
+        </form>
+      </section>
 
       <section class="catalog">
         <ul class="ice-cream-list">
@@ -181,47 +238,46 @@
           </li>
         </ul>
       </section>
-      <span></span>
+      <span>1 2 3 4 5 </span>
   </main>
   <footer>
-    <section class="social-networks">
-      <ul>
-        <li class="social-networks-tw">
-          <a href="#">Ссылка на Twitter</a>
-        </li>
-        <li class="social-networks-ins">
-          <a href="#">Ссылка на Instagram</a>
-        </li>
-        <li class="social-networks-fb">
-          <a href="#">Ссылка на Fecebook</a>
-        </li>
-        <li class="social-networks-vk">
-          <a href="#">Ссылка на ВКонтакте</a>
-        </li>
-      </ul>
-    </section>
-
-    <ul class="documentation">
-      <li>
-        <a href="#">Для поставщиков</a>
-      </li>
-      <li>
-        <a href="#">О производстве</a>
-      </li>
-      <li>
-        <a href="#">Наши документы</a>
-      </li>
-      <li>
-        <a href="#">Экологические стандарты</a>
-      </li>
-    </ul>
-
-    <div class="developers">
-      <a href="#">логотип разработчика</a>
-      <p>Сделано в
-        <a href="#">HTML Academy ©</a> 2017</p>
-    </div>
-  </footer>
+      <section class="social-networks">
+        <ul>
+          <li class="social-networks-tw">
+            <a href="#">Ссылка на Twitter</a>
+          </li>
+          <li class="social-networks-ins">
+            <a href="#">Ссылка на Instagram</a>
+          </li>
+          <li class="social-networks-fb">
+            <a href="#">Ссылка на Fecebook</a>
+          </li>
+          <li class="social-networks-vk">
+            <a href="#">Ссылка на ВКонтакте</a>
+          </li>
+        </ul>
+      </section>
+      <div class="documentation">
+        <ul class="documentation">
+          <li class="suppliers">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="production">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="documentation-gllacy">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="standards">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="developers">
+        <img src="img/logo-htmlacademy-small.svg" width="50" height="50" name="логотип разработчика">
+        <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
+      </div>
+    </footer>
 </body>
 
 </html>
