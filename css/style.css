@@ -93,12 +93,13 @@ img {
   margin-left: auto;
   display: flex;
   align-content: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .user-navigation-item a {
-  width: 100px;
-  padding: 5px 15px;
+  
+  padding: 7px 15px;
+  
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -107,6 +108,85 @@ img {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
+.user-navigation-item-search a {
+    font-size: 0;
+    display: block;
+    padding: 0;
+    
+    width: 33px;
+    height: 33px;
+    position: relative;
+}
+.user-navigation-item-search a::before {
+    content: "";
+    background: url(../img/loupe.svg) 0 0 no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.user-navigation-item-search a:hover {
+    background-color: #f8f7f4;
+}
+.user-navigation-item-search a:hover::before {
+    content: "";
+    background: url(../img/loupe-black.png) 0 0 no-repeat;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.user-navigation-item-entrance a {
+    padding-left: 45px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    display: block;
+    position: relative;
+}
+.user-navigation-item-entrance a::before {
+    content: "";
+    width: 21px;
+    height: 19px;
+    background: url(../img/entrance-white.png) 0 0 no-repeat;
+    
+    position: absolute;
+    top: 6px;
+    left: 15px;
+
+}
+.user-navigation-item-entrance a:hover {
+    color: #323232;
+    background-color: #f8f7f4;
+
+}
+.user-navigation-item-entrance a:hover::before {
+    content: "";
+    width: 21px;
+    height: 20px;
+    background: url(../img/entrance.svg) 0 0 no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.user-navigation-item-basket a {
+    padding-left: 45px;
+    padding-right: 15px;
+    padding-bottom: 9px;
+    display: block;
+    position: relative;
+}
+.user-navigation-item-basket a::before {
+    content: "";
+    width: 21px;
+    height: 20px;
+    background: url(../img/basket.svg) 0 0 no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
 
 .time {
   width: 100%;
