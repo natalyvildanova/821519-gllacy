@@ -1,8 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1173px;
-    height: 2416px;
+    
 
     font-family: "Roboto", "Open Sans", sans-serif;
     font-size: 16px;
@@ -12,8 +11,7 @@ body {
 
     background-color: #849d8f;
 
-    margin-left: auto;
-    margin-right: auto;
+    
 
 }
 a {
@@ -38,7 +36,10 @@ img {
     overflow: hidden;
 }
 .main-header {
-    margin-bottom: 350px;
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-navigation {
      
@@ -154,9 +155,9 @@ img {
     padding-right: 26px;
 }
 .main-menu {
-    min-width: 1200px;
-    margin: 0;
-    padding: 0;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .features {
@@ -180,8 +181,33 @@ img {
     font-weight: 700;
     line-height: 22px;
 }
-.features-item .button {
+.features-item a {
     /*прописать стилизацию кнопок ХОЧУВАРЕНЬЯ И ХОЧУШОКОЛАДКИ*/
+    
+    padding: 14px 22px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 40px;
+
+    box-shadow: 0 2px 2px rgba(85, 8, 0, 0.54);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #ca3824 0%, #f26843 100%);
+    opacity: 0.99;
+
+}
+.features-item a:hover {
+    box-shadow: 0 1px 2px #ac1000;
+    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+.features-item a:active {
+    box-shadow: inset 0 2px 2px #942718;
+    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.07);
+    background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 .features-item-strawberry {
     width: 560px;
@@ -257,7 +283,7 @@ img {
     margin: 37px 27px;
     padding: 0;
     padding-top: 30px;
-    background: url(../img/wafer-pattern.png) 0 0 repeat;
+    background: url(../img/wafer-pattern-new.png) 0 0 no-repeat;
      border-radius: 10px;
 
     
@@ -361,7 +387,7 @@ img {
     line-height: 22px;
     
 
-    background-color: #ededed;
+    background: url(../img/straberry-back-new.png) 0 0 no-repeat;
 
 
 }
@@ -382,17 +408,21 @@ img {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-    
-    background-color: #ededed;
+    padding: 5px;
+    background: url(../img/background-mail.png) 0 0 no-repeat;
 
 }
-
-.modal-map {
-    /*карта*/
+.subscription-form {
+    width: 520px;
+    height: 180px;
+    background-color: #f8f7f4;
 }
+
+
 .main-footer {
-    
-    min-height: 40px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     justify-content: space-around;
@@ -459,7 +489,7 @@ img {
     border: 2px solid salmon;
  }
  .developers img {
-     margin-top: 20px;
+     margin-top: 10px;
      margin-left: 166px;
  }
 
