@@ -86,6 +86,18 @@ img {
 .site-navigation-item:first-child:focus {
   /*сделать список каталога(выподающий попап)и его застилизовать*/
 }
+.site-navigation-item-visually-red a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #d07058;
+    border-radius: 20px;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 13px;
+}
 .user-navigation {
   min-width: 272px;
   height: 34px;
@@ -97,9 +109,8 @@ img {
 }
 
 .user-navigation-item a {
-  
   padding: 7px 15px;
-  
+
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -109,84 +120,95 @@ img {
   border-radius: 20px;
 }
 .user-navigation-item-search a {
-    font-size: 0;
-    display: block;
-    padding: 0;
-    
-    width: 33px;
-    height: 33px;
-    position: relative;
+  font-size: 0;
+  display: block;
+  padding: 0;
+
+  width: 33px;
+  height: 33px;
+  position: relative;
 }
 .user-navigation-item-search a::before {
-    content: "";
-    background: url(../img/loupe.svg) 0 0 no-repeat;
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top: 7px;
-    left: 7px;
+  content: "";
+  background: url(../img/loupe.svg) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
 }
 .user-navigation-item-search a:hover {
-    background-color: #f8f7f4;
+  background-color: #f8f7f4;
 }
 .user-navigation-item-search a:hover::before {
-    content: "";
-    background: url(../img/loupe-black.png) 0 0 no-repeat;
-    width: 17px;
-    height: 17px;
-    position: absolute;
-    top: 7px;
-    left: 7px;
+  content: "";
+  background: url(../img/loupe-black.png) 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
 }
 .user-navigation-item-entrance a {
-    padding-left: 45px;
-    padding-right: 15px;
-    padding-bottom: 9px;
-    display: block;
-    position: relative;
+  padding-left: 45px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  display: block;
+  position: relative;
 }
 .user-navigation-item-entrance a::before {
-    content: "";
-    width: 21px;
-    height: 19px;
-    background: url(../img/entrance-white.png) 0 0 no-repeat;
-    
-    position: absolute;
-    top: 6px;
-    left: 15px;
+  content: "";
+  width: 21px;
+  height: 19px;
+  background: url(../img/entrance-white.png) 0 0 no-repeat;
 
+  position: absolute;
+  top: 6px;
+  left: 15px;
 }
 .user-navigation-item-entrance a:hover {
-    color: #323232;
-    background-color: #f8f7f4;
-
+  color: #323232;
+  background-color: #f8f7f4;
 }
 .user-navigation-item-entrance a:hover::before {
-    content: "";
-    width: 21px;
-    height: 20px;
-    background: url(../img/entrance.svg) 0 0 no-repeat;
-    position: absolute;
-    top: 5px;
-    left: 15px;
+  content: "";
+  width: 21px;
+  height: 20px;
+  background: url(../img/entrance.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 15px;
 }
 .user-navigation-item-basket a {
-    padding-left: 45px;
-    padding-right: 15px;
-    padding-bottom: 9px;
-    display: block;
-    position: relative;
+  padding-left: 45px;
+  padding-right: 15px;
+  padding-bottom: 9px;
+  display: block;
+  position: relative;
 }
 .user-navigation-item-basket a::before {
-    content: "";
-    width: 21px;
-    height: 20px;
-    background: url(../img/basket.svg) 0 0 no-repeat;
-    position: absolute;
-    top: 5px;
-    left: 15px;
+  content: "";
+  width: 21px;
+  height: 20px;
+  background: url(../img/basket.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 15px;
 }
-
+.user-navigation-item-basket-notempty a {
+    color: #323232;
+    background-color: #f8f7f4;
+    opacity: 0.99;
+}
+.user-navigation-item-basket-notempty a::before {
+    content: "";
+  width: 21px;
+  height: 20px;
+  background: url(../img/basket-red.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
 
 .time {
   width: 100%;
@@ -436,15 +458,14 @@ img {
   background: url(../img/straberry-back-new.png) 0 0 no-repeat;
 }
 .new-article p {
-    margin: 0;
-    margin-top: 20px;
-    margin-left: 20px;
-    
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .new-article a {
-    display: block;
+  display: block;
   width: 300px;
-  
+
   color: #323232;
   font-size: 24px;
   font-weight: 700;
@@ -470,41 +491,40 @@ img {
   border-radius: 10px;
 }
 .subscription-form p {
-    margin-top: 23px;
-    margin-left: 11px;
-
+  margin-top: 23px;
+  margin-left: 11px;
 }
 .subscription-form input {
-    width: 340px;
-    height: 44px;
-    border-radius: 5px;
-    padding: 0 15px;
-    border: 1px solid rgba(178, 178, 178, 0.52);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  width: 340px;
+  height: 44px;
+  border-radius: 5px;
+  padding: 0 15px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .subscription-form .button {
-    border: none;
-    color: #fefefe;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-    background-color: #e84d37;
-    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
-    padding: 10px 18px;
-    border-radius: 40px;
+  border: none;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  padding: 10px 18px;
+  border-radius: 40px;
 }
 .subscription-form .button:hover {
-    box-shadow: 0 2px 2px #ac1000;
-    background-color: rgba(255, 255, 255, 0.2);
-    background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 .subscription-form .button:active {
-    box-shadow: inset 0 2px 2px #942718;
-    background-color: rgba(0, 0, 0, 0.07);
-    background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 .conteiner-map {
   width: 1200px;
