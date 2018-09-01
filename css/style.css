@@ -160,29 +160,41 @@ img {
     margin-right: auto;
 
 }
+.additionally {
+    width: 1200px;
+}
 .features {
     margin: 0 27px;
-    padding: 0;
-    
+    padding: 20px;
     min-width: 1146px;
     display: flex;
     justify-content: space-between;
     list-style: none;
+
+   
+    
+}
+.features-item {
+    position: relative;
 }
 .features-item h3 {
     color: #ffffff;
     font-size: 35px;
     font-weight: 700;
     line-height: 41px;
+    margin: 20px;
+
 }
 .features-item p {
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 .features-item a {
-    /*прописать стилизацию кнопок ХОЧУВАРЕНЬЯ И ХОЧУШОКОЛАДКИ*/
+    
     
     padding: 14px 22px;
     color: #ffffff;
@@ -195,6 +207,10 @@ img {
     background-color: #ffffff;
     background-image: linear-gradient(to top, #ca3824 0%, #f26843 100%);
     opacity: 0.99;
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 
 }
 .features-item a:hover {
@@ -215,7 +231,7 @@ img {
     color: #ffffff;
     background-color: #333333;
     background: url(../img/crimcon-back.png) 0 0 no-repeat;
-/*вставить фонувую картинку малина*/
+
 }
 .features-item-chocolate {
     width: 560px;
@@ -224,13 +240,15 @@ img {
     background-color: #333333;
     background: url(../img/choko-back.png) 0 0 no-repeat;
 
-    /*втаить фон шоколад*/
+    
 }
 .catalog {
-    margin: 37px 27px;
-    padding: 0;
     
-    border: 2px solid red;
+    margin: 37px 27px;
+    margin-bottom: 0;
+    padding: 0;
+    min-height: 334px;
+    
     
 }
 .ice-cream-list {
@@ -245,15 +263,30 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    border: 2px solid rebeccapurple;
+    
 }
 .ice-cream-item {
     width: 267px;
+    min-height: 334px;
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-    border: 2px solid green;
+    
+
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+}
+.ice-cream-item::before {
+    content: "";
+    width: 61px;
+    height: 61px;
+    background: url(../img/hit.svg) 0 0 no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .ice-cream-item-price {
     padding: 0;
@@ -263,6 +296,12 @@ img {
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
+
+    position: absolute;
+    top: 214px;
+    left: 0;
+
+    
 }
 .ice-cream-item-price span {
     
@@ -274,13 +313,15 @@ img {
     font-weight: 500;
     line-height: 22px;
     text-decoration: underline;
-    vertical-align: middle;
+    text-align: center;
+    
 }
 .store-description {
     min-width: 1146px;
     min-height: 308px;
 
     margin: 37px 27px;
+    margin-top: 0;
     padding: 0;
     padding-top: 30px;
     background: url(../img/wafer-pattern-new.png) 0 0 no-repeat;
@@ -417,6 +458,18 @@ img {
     height: 180px;
     background-color: #f8f7f4;
 }
+.conteiner-map {
+    width: 1200px;
+    min-height: 500px;
+    
+    
+    position: relative;
+}
+.modal-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .map-address {
     width: 303px;
     height: 305px;
@@ -424,6 +477,10 @@ img {
     border-radius: 10px;
     padding-top: 27px;
     padding-left: 25px;
+    z-index: 2;
+    position: absolute;
+    top: 60px;
+    right: 20px;
 }
 .map-address-item p {
     color: #323232;
@@ -467,7 +524,7 @@ img {
     line-height: 22px;
 }
 .map-address a {
-    width: 250px;
+    width: 230px;
     color: #fefefe;
     font-size: 18px;
     font-weight: 700;
@@ -480,14 +537,18 @@ img {
     padding: 13px 28px;
     border-radius: 40px;
     
-   
-    
+    position: absolute;
+    bottom: 31px;
+    right: 20px;
 }
 
 
 
 .main-footer {
+    
     width: 1200px;
+    
+
     margin-left: auto;
     margin-right: auto;
 
@@ -517,6 +578,7 @@ img {
 .documentation {
     width: 364px;
     margin: 0;
+    
     padding: 0;
 
     border: 2px solid salmon;
@@ -532,19 +594,27 @@ img {
     align-content: center;
 }
 .documentation-list-item a {
-    min-width: 184px;
+    min-width: 150px;
     margin: 15px;
-    margin-right: 30px;
+    margin-left: 30px;
+    
+   
     color: #ffffff;
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     text-decoration: underline;
+    
+    
+}
+
+    
 }
 .suppliers a {
     font-weight: 700;
     
 }
+
 
 
 
