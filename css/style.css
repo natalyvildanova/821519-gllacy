@@ -68,6 +68,7 @@ img {
   font-weight: 700;
   line-height: 18px;
   padding: 8px;
+  position: relative;
 }
 .site-navigation-item a:hover,
 .site-navigation-item a:focus {
@@ -84,10 +85,7 @@ img {
   background-color: #ededed;
   background-color: #f8f7f4;
 }
-.site-navigation-item:first-child:hover,
-.site-navigation-item:first-child:focus {
-  /*сделать список каталога(выподающий попап)и его застилизовать*/
-}
+
 .site-navigation-item-visually-red a {
   color: #ffffff;
   font-size: 16px;
@@ -100,6 +98,74 @@ img {
   padding-left: 14px;
   padding-right: 13px;
 }
+.submenu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation-item-catalog:hover .submenu {
+  display: block;
+  width: 143px;
+  position: absolute;
+  top: 57px;
+  left: 185px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.submenu-title {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 8px 8px;
+}
+.submenu-title-line {
+  width: 143px;
+  height: 1px;
+  background: #d1d0ce;
+}
+.main-catalog {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.main-catalog li {
+  padding: 8px 8px;
+}
+.main-catalog li:hover {
+  background-color: #fbded7;
+}
+.main-catalog li:active {
+  background-color: #f6b5a5;
+}
+.main-catalog a {
+  padding: 8px 0;
+  margin: 0;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+.main-catalog a:hover {
+  background-color: #fbded7;
+}
+
+.main-catalog a:active {
+  background-color: #f6b5a5;
+}
+
 .user-navigation {
   min-width: 272px;
   height: 34px;
@@ -270,7 +336,6 @@ img {
 .filters {
   width: 960px;
   display: inline-block;
-  
 }
 .filter .filter-item-sorting {
   border: none;
