@@ -30,6 +30,8 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 5;
 }
 .main-navigation {
   display: flex;
@@ -87,16 +89,16 @@ img {
   /*сделать список каталога(выподающий попап)и его застилизовать*/
 }
 .site-navigation-item-visually-red a {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    background-color: #d07058;
-    border-radius: 20px;
-    text-decoration: none;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 14px;
-    padding-right: 13px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #d07058;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 13px;
 }
 .user-navigation {
   min-width: 272px;
@@ -196,12 +198,12 @@ img {
   left: 15px;
 }
 .user-navigation-item-basket-notempty a {
-    color: #323232;
-    background-color: #f8f7f4;
-    opacity: 0.99;
+  color: #323232;
+  background-color: #f8f7f4;
+  opacity: 0.99;
 }
 .user-navigation-item-basket-notempty a::before {
-    content: "";
+  content: "";
   width: 21px;
   height: 20px;
   background: url(../img/basket-red.svg) 0 0 no-repeat;
@@ -233,9 +235,382 @@ img {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -152px;
+  position: relative;
+  z-index: 3;
+}
+.main-menu-catalog {
+  margin: 0 auto;
+}
+.breadcrumbs {
+  width: 220px;
+  list-style: none;
+  margin: 0;
+  margin-left: 27px;
+  padding: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.breadcrumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+.filters {
+  width: 960px;
+  display: inline-block;
+  
+}
+.filter .filter-item-sorting {
+  border: none;
+  display: inline-block;
+}
+.filter-item-sorting legend {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-left: 5px;
+}
+.filter-item-sorting input {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  border: none;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  background-color: #f8f7f4;
+  opacity: 0.2;
+  border-radius: 20px;
+}
+.filter-item-sorting .sorting {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.filter .filter-item-price {
+  border: none;
+  display: inline-block;
+}
+.filter-item-price legend {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.filter-item-price input {
+  border: none;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  background-color: #f8f7f4;
+  opacity: 0.2;
+  border-radius: 20px;
+}
+.filter .filter-item-product {
+  border: none;
+  display: inline-block;
+}
+.filter-item-product legend {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.filter-item-product-list {
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 0.2;
+  padding: 10px 10px;
+  margin: 0;
+  width: 415px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter .filter-item-additive {
+  border: none;
+  display: inline-block;
+}
+.filter-item-additive-list {
+  list-style: none;
+  background-color: #ffffff;
+  border-radius: 20px;
+  opacity: 0.2;
+  padding: 10px 10px;
+  margin: 0;
+  width: 415px;
+  display: flex;
+  justify-content: space-between;
+}
+.filter button {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-bottom: 9px;
+  padding-right: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+.slider {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+.slider-background {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  position: relative;
+}
+/*слайд первый*/
+.slider-background-first {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.slider-background-first p {
+  width: 700px;
+  text-align: center;
+  position: absolute;
+  top: 317px;
+  left: 228px;
+}
+.slider-background-first a {
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background-color: #ffffff;
+  padding-top: 11px;
+  padding-left: 38px;
+  padding-right: 39px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  position: absolute;
+  top: 520px;
+  left: 445px;
+}
+.slider-background-first a:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+.slider-background-first a:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+.slider-background-first .slides-switches-first {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 503px;
+  left: 13px;
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-radio-first button {
+  font-size: 0;
+  border: 2px solid #ffffff;
+  background-color: #849d8f;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+}
+.slide-radio-first button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.slide-radio-first .visually-white,
+.slide-radio-first button:active {
+  background: #ffffff;
+}
+/*слайд второй*/
+.slider-background-second {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.slider-background-second p {
+  width: 700px;
+  text-align: center;
+  position: absolute;
+  top: 317px;
+  left: 228px;
+}
+.slider-background-second a {
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background-color: #ffffff;
+  padding-top: 11px;
+  padding-left: 38px;
+  padding-right: 39px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  position: absolute;
+  top: 520px;
+  left: 445px;
+}
+.slider-background-second a:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+.slider-background-second a:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+.slider-background-second .slides-switches-second {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 503px;
+  left: 13px;
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-radio-second button {
+  font-size: 0;
+  border: 2px solid #ffffff;
+  background-color: #8996a6;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+}
+.slide-radio-second button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.slide-radio-second .visually-white,
+.slide-radio-second button:active {
+  background: #ffffff;
+}
+/*третий слайд*/
+.slider-background-third {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.slider-background-third p {
+  width: 700px;
+  text-align: center;
+  position: absolute;
+  top: 317px;
+  left: 228px;
+}
+.slider-background-third a {
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  background-color: #ffffff;
+  padding-top: 11px;
+  padding-left: 38px;
+  padding-right: 39px;
+  padding-bottom: 12px;
+  border-radius: 40px;
+  position: absolute;
+  top: 520px;
+  left: 445px;
+}
+.slider-background-third a:hover {
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+.slider-background-third a:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+.slider-background-third .slides-switches-third {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 503px;
+  left: 13px;
+  width: 79px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide-radio-third button {
+  font-size: 0;
+  border: 2px solid #ffffff;
+  background-color: #9d8b84;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+}
+.slide-radio-third button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.slide-radio-third .visually-white,
+.slide-radio-third button:active {
+  background: #ffffff;
 }
 .additionally {
   width: 1200px;
+  margin-top: 700px;
+  position: relative;
+  z-index: 4;
 }
 .features {
   margin: 0 27px;
@@ -532,9 +907,15 @@ img {
   position: relative;
 }
 .modal-map {
+  width: 1200px;
+  min-height: 430px;
   position: absolute;
   top: 0;
   left: 0;
+}
+.modal-map img {
+  height: 430px;
+  width: 1200px;
 }
 .map-address {
   width: 278px;
