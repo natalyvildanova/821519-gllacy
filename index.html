@@ -142,21 +142,25 @@
           <img src="img/1.herb-orange.png" width="267" height="267" alt="Сливочное мороженное с апельсиновым джемом оранжевого цвета">
           <p class="ice-cream-item-price">310 &#8381;<span>/кг</span></p>
           <p class="ice-cream-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <button class="button button-view">Быстрый просмотр</button>
         </li>
         <li class="ice-cream-item">
           <img src="img/2.coffee-chokol.png" width="267" height="267" alt="Сливочно-кофейное мороженное шоколадного цвета">
           <p class="ice-cream-item-price">380 &#8381;<span>/кг</span></p>
           <p class="ice-cream-item-name">Сливочно-кофейное с кусочками шоколада</p>
+          <button class="button button-view">Быстрый просмотр</button>
         </li>
         <li class="ice-cream-item">
           <img src="img/3.strawberry.png" width="267" height="267" alt="Клубничное мороженное нежно-розового цвета с сердечками из белого шоколада">
           <p class="ice-cream-item-price">355 &#8381;<span>/кг</span></p>
           <p class="ice-cream-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <button class="button button-view">Быстрый просмотр</button>
         </li>
         <li class="ice-cream-item">
           <img src="img/4.crem-brule.png" width="267" height="267" alt="Мороженное крем-брюле с карамельной подливкой">
           <p class="ice-cream-item-price">415 &#8381;<span>/кг</span></p>
           <p class="ice-cream-item-name">Сливочное крем-брюле с карамельной подливкой</p>
+          <button class="button button-view">Быстрый просмотр</button>
         </li>
       </ul>
     </section>
@@ -208,25 +212,29 @@
       </section>
     </div>
 
-    <form class="Feedback visually-hidden" method="get" action="https://echo.htmlacademy.ru/">
-      <fieldset>
-        <p>Мы обязательно вам ответим!</p>
-        <button>Кнопка "закрыть окно"</button>
-      </fieldset>
-      <fieldset>
-        <legend class="visually-hidden">Форма обратной связи</legend>
-        <input type="text" name="username" placeholder="Как вас зовут?">
-        <input type="text" name="usermail" placeholder="Ваша почта для ответа?">
-        <input type="text" name="userfeedback" placeholder="Напишите что-нибудь...">
-
-      </fieldset>
-      <fieldset>
-        <button class="button" type="submit">Отправить</button>
-      </fieldset>
-    </form>
+    
 
 
   </main>
+  <div class="modal-overline"></div>
+  <form class="modal-feedback" method="get" action="https://echo.htmlacademy.ru/">
+    <fieldset class="modal-feedback-item modal-feedback-item-button">
+      <p>Мы обязательно вам ответим!</p>
+      <button>Кнопка "закрыть окно"</button>
+    </fieldset>
+    <fieldset class="modal-feedback-item">
+      <legend class="visually-hidden">Форма обратной связи</legend>
+      <input type="text" name="username" placeholder="Как вас зовут?">
+      <input type="text" name="usermail" placeholder="Ваша почта для ответа?">
+      <!--<input class="feedback-text visually-hidden" type="text" name="userfeedback" placeholder="Напишите что-нибудь...">-->
+      
+      <textarea name="userfeedback" id="feedback-text" cols="44" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+
+    </fieldset>
+    <fieldset class="modal-feedback-item modal-feedback-item-submit">
+      <button class="button" type="submit">Отправить</button>
+    </fieldset>
+  </form>
   <footer class="main-footer">
     <section class="social-networks">
       <ul class="social-networks-item">
