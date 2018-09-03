@@ -363,7 +363,7 @@ img {
   left: 15px;
 }
 .baskets {
-  display: block;
+  display: none;
   position: absolute;
   top: 60px;
   right: 20px;
