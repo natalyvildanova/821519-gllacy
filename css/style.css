@@ -70,14 +70,14 @@ img {
   padding: 8px;
   position: relative;
 }
-.site-navigation-item a:hover,
-.site-navigation-item a:focus {
+.site-navigation-item > a:hover,
+.site-navigation-item > a:focus {
   color: #333333;
   text-decoration: none;
   background-color: #f7f6f3;
   border-radius: 20px;
 }
-.site-navigation-item a:active {
+.site-navigation-item > a:active {
   color: #333333;
   text-decoration: none;
   border-radius: 20px;
@@ -86,7 +86,7 @@ img {
   background-color: #f8f7f4;
 }
 
-.site-navigation-item-visually-red a {
+.site-navigation-item-visually-red > a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -176,7 +176,7 @@ img {
   margin-top: 20px;
 }
 
-.user-navigation-item a {
+.user-navigation-item > a {
   padding: 7px 15px;
 
   color: #ffffff;
@@ -243,14 +243,14 @@ img {
   font-weight: 400;
   line-height: 24px;
 }
-.user-navigation-item-entrance a {
+.user-navigation-item-entrance > a {
   padding-left: 45px;
   padding-right: 15px;
   padding-bottom: 9px;
   display: block;
   position: relative;
 }
-.user-navigation-item-entrance a::before {
+.user-navigation-item-entrance > a::before {
   content: "";
   width: 21px;
   height: 19px;
@@ -260,11 +260,11 @@ img {
   top: 6px;
   left: 15px;
 }
-.user-navigation-item-entrance a:hover {
+.user-navigation-item-entrance > a:hover {
   color: #323232;
   background-color: #f8f7f4;
 }
-.user-navigation-item-entrance a:hover::before {
+.user-navigation-item-entrance > a:hover::before {
   content: "";
   width: 21px;
   height: 20px;
@@ -275,6 +275,7 @@ img {
 }
 .entrance {
   display: none;
+  
 }
 .user-navigation-item-entrance:hover .entrance {
   display: block;
@@ -314,14 +315,28 @@ img {
   background-color: #e84d37;
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
   border-radius: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
-.entrance a {
+.entrance > a {
   color: #323232;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   text-decoration: underline;
+  padding: 20px 10px;
+  margin-left: 100px;
+  
+ 
+ 
+
 }
+.entrance > a:hover,
+.entrance > a:active {
+  color: #e84d37;
+}
+
 .user-navigation-item-basket a {
   padding-left: 45px;
   padding-right: 15px;
@@ -885,7 +900,6 @@ img {
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   padding: 7px 13px;
-  
 }
 .button-view {
   display: none;
@@ -905,7 +919,6 @@ img {
   border: 0;
   margin-left: 30px;
   margin-bottom: 22px;
-  
 }
 .ice-cream-item .button-view:hover {
   box-shadow: 0 2px 2px #ac1000;
@@ -921,7 +934,55 @@ img {
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
-
+.pagination {
+  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-list {
+  list-style: none;
+  width: 160px;
+  margin-right: 47px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-item a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.pagination-item a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 27px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.pagination-item a:active {
+  background-color: #ffffff;
+  color: #323232;
+}
+.pagination-item-current a {
+  background-color: #ffffff;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 27px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.pagination-item-current a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 27px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.pagination-item-current a:active {
+  background-color: #ffffff;
+  color: #323232;
+}
 .store-description {
   min-width: 1146px;
   min-height: 308px;
