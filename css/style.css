@@ -983,10 +983,58 @@ img {
 .pagination-list {
   list-style: none;
   width: 160px;
-  margin-right: 47px;
-  display: flex;
-  justify-content: space-between;
+  margin-right: 107px;
+  margin-bottom: 35px;
+  white-space: nowrap;
 }
+.pagination-list a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+}
+
+.pagination-list .prev {
+  font-size: 0;
+  background: url(../img/icon-right-small2.svg) 11px 8px no-repeat;
+  width: 10px;
+  opacity: 0.3;
+  transform: rotate(180deg);
+  
+  border-radius: 40px;
+}
+.pagination-list .next {
+  font-size: 0;
+  background: url(../img/icon-right-small2.svg) 11px 8px no-repeat;
+  border-radius: 40px;
+  width: 10px;
+}
+.pagination-list .current { 
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 40px;
+  
+}
+.pagination-list a:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+.pagination-list .prev:hover {
+  opacity: 1;
+}
+.pagination-list a:active {
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 40px;
+}
+/*
 .pagination-item a {
   color: #ffffff;
   font-size: 16px;
@@ -1024,6 +1072,7 @@ img {
   background-color: #ffffff;
   color: #323232;
 }
+*/
 .store-description {
   min-width: 1146px;
   min-height: 308px;
@@ -1388,6 +1437,13 @@ img {
   background-color: rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+.line-main-footer {
+  width: 1146px;
+  height: 1px;
+  background-color: rgba(255, 255, 255,0.3);
+  margin: 0 auto;
+  padding: 0;
 }
 .main-footer {
   width: 1200px;
