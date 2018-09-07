@@ -8,6 +8,15 @@ body {
   color: #ffffff;
   background-color: #849d8f;
 }
+
+body.blue {
+  background-color: #8996a6;
+}
+
+body.pink {
+  background-color: #9d8b84;
+}
+
 a {
   text-decoration: none;
 }
@@ -29,7 +38,6 @@ img {
   margin-right: auto;
   position: relative;
   z-index: 5;
-  
 }
 .main-navigation {
   display: flex;
@@ -236,8 +244,9 @@ img {
   background-color: #f8f7f4;
   border-radius: 5px;
   position: absolute;
-  top: 55px;
-  right: 215px;
+  top: 50px;
+  right: 239px;
+  margin-top: 4px;
 }
 .search input {
   width: 281px;
@@ -292,7 +301,7 @@ img {
   margin: 0;
   position: absolute;
   top: 50px;
-  right: 150px;
+  right: 138px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -376,7 +385,7 @@ img {
   position: absolute;
   top: 6px;
   left: 16px;
-}   
+}
 .baskets {
   display: none;
 }
@@ -392,7 +401,6 @@ img {
   background-color: #f8f7f4;
   border-radius: 5px;
   margin-top: 4px;
-
 }
 .baskets-table {
   width: 560px;
@@ -488,7 +496,7 @@ img {
   line-height: 24px;
   padding-right: 26px;
 }
-.site-wrapper {
+.site-header {
   width: 1200px;
   min-height: 882px;
   margin: 0 auto;
@@ -500,18 +508,18 @@ img {
   transition: background-image 0.5s ease, background-color 0.5s ease;
   z-index: 1;
 }
-.site-wrapper::before,
-.site-wrapper::after {
+.site-header::before,
+.site-header::after {
   content: "";
 
   visibility: hidden;
 }
 
-.site-wrapper::before {
+.site-header::before {
   background-image: url("../img/background-lemon.png");
 }
 
-.site-wrapper::after {
+.site-header::after {
   background-image: url("../img/background-strawberry.png");
 }
 .container {
@@ -596,28 +604,28 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-#product-1:checked ~ .site-wrapper {
+#product-1:checked ~ .site-header {
   background-color: #849d8f;
   background-image: url("../img/background-raspberries.png");
 }
 
-#product-2:checked ~ .site-wrapper {
+#product-2:checked ~ .site-header {
   background-color: #8996a6;
   background-image: url("../img/background-lemon.png");
 }
 
-#product-3:checked ~ .site-wrapper {
+#product-3:checked ~ .site-header {
   background-color: #9d8b84;
   background-image: url("../img/background-strawberry.png");
 }
-#product-1:checked ~ .site-wrapper #slide1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
+#product-1:checked ~ .site-header #slide1,
+#product-2:checked ~ .site-header #slide2,
+#product-3:checked ~ .site-header #slide3 {
   display: block;
 }
-#product-1:checked ~ .site-wrapper label[for="product-1"],
-#product-2:checked ~ .site-wrapper label[for="product-2"],
-#product-3:checked ~ .site-wrapper label[for="product-3"] {
+#product-1:checked ~ .site-header label[for="product-1"],
+#product-2:checked ~ .site-header label[for="product-2"],
+#product-3:checked ~ .site-header label[for="product-3"] {
   background-color: #ffffff;
 }
 .main-menu {
@@ -1030,16 +1038,17 @@ img {
 }
 .ice-cream-list {
   list-style: none;
-  width: 100%;
-  padding: 0 10px;
+  width: calc(100% - 54px);
+  padding: 0 27px;
   margin: 0;
+  justify-content: space-between;
 
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
 .ice-cream-item {
-  width: 295px;
+  width: 267px;
 
   color: #ffffff;
   font-size: 16px;
@@ -1052,7 +1061,6 @@ img {
   z-index: 4;
 }
 .ice-cream-item img {
-  margin: 16px;
   margin-bottom: 5px;
 }
 .ice-cream-item-hit::before {
@@ -1061,8 +1069,8 @@ img {
   height: 61px;
   background: url(../img/hit.svg) 0 0 no-repeat;
   position: absolute;
-  top: 16px;
-  left: 17px;
+  top: 1px;
+  left: 1px;
 }
 .ice-cream-item-price {
   padding: 0;
@@ -1072,9 +1080,8 @@ img {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
-  position: absolute;
-  top: 225px;
-  left: 10px;
+  margin-top: -68px;
+  margin-bottom: 21px;
 }
 .ice-cream-item-price span {
   font-size: 30px;
@@ -1085,7 +1092,6 @@ img {
   margin-left: -7px;
 }
 .ice-cream-item-name {
-  width: 258px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -1093,10 +1099,8 @@ img {
   text-decoration: underline;
   text-align: center;
   margin: 0;
-  margin-top: 2px;
-  margin-left: 21px;
 
-  padding: 0;
+  padding: 0 5px;
 }
 .item-view {
   display: none;
@@ -1108,14 +1112,18 @@ img {
 .ice-cream-item:hover .item-view {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 295px;
-  height: 410px;
+  top: -13px;
+  left: -13px;
+  right: -13px;
+  bottom: -82px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   z-index: 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 22px;
 }
 
 .button-view {
@@ -1130,9 +1138,6 @@ img {
   padding-bottom: 12px;
   border-radius: 40px;
   border: 0;
-  position: absolute;
-  bottom: 12px;
-  left: 45px;
 }
 
 .button-view:hover {
@@ -1620,11 +1625,15 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 187px;
   height: 36px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
+
+.social-networks-item-icon {
+  margin-right: 12px;
+}
+
 .social-networks-item-icon a {
   width: 32px;
   height: 32px;
@@ -1654,13 +1663,12 @@ img {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 21px;
   position: relative;
   margin-left: 6px;
 }
 .documentation-list-item {
-  width: 50%;
+  width: 42%;
 }
 
 .documentation-list-item::before {
@@ -1684,8 +1692,9 @@ img {
 .documentation-list-item a:active {
   color: #ffbc9e;
 }
-.documentation-list-item:nth-child(even) {
-  margin-left: -10px;
+
+.documentation-list-item.standards {
+  width: 50%;
 }
 
 .suppliers a {
