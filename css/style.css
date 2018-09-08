@@ -214,6 +214,9 @@ img {
 .search {
   display: none;
 }
+.user-navigation-item-search:hover a {
+  background-color: #f8f7f4;
+}
 .user-navigation-item-search:hover .search,
 .user-navigation-item-search a:hover .search {
   display: block;
@@ -271,6 +274,10 @@ img {
 .entrance {
   display: none;
 }
+.user-navigation-item-entrance:hover a {
+  color: #323232;
+  background-color: #f8f7f4;
+}
 .user-navigation-item-entrance:hover .entrance,
 .user-navigation-item-entrance a:hover .entrance {
   display: block;
@@ -322,6 +329,7 @@ img {
   line-height: 24px;
   text-decoration: underline;
   padding: 25px 10px;
+  padding-top: 10px;
   margin-left: 130px;
 }
 .entrance > a:hover,
