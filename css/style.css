@@ -202,7 +202,7 @@ img {
 .user-navigation-item-search a:hover {
   background-color: #f8f7f4;
 }
-.user-navigation-item-search a:hover::before {
+.user-navigation-item-search:hover a::before {
   content: "";
   background: url(../img/loupe-black.png) 0 0 no-repeat;
   width: 17px;
@@ -217,8 +217,7 @@ img {
 .user-navigation-item-search:hover a {
   background-color: #f8f7f4;
 }
-.user-navigation-item-search:hover .search,
-.user-navigation-item-search a:hover .search {
+.user-navigation-item-search:hover .search {
   display: block;
   width: 341px;
   padding: 0;
@@ -242,14 +241,14 @@ img {
   font-weight: 400;
   line-height: 24px;
 }
-.user-navigation-item-entrance > a {
+.user-navigation-item-entrance .user-entrance-link {
   padding: 8px 17px;
   padding-left: 44px;
   padding-bottom: 8px;
   display: block;
   position: relative;
 }
-.user-navigation-item-entrance > a::before {
+.user-navigation-item-entrance .user-entrance-link::before {
   content: "";
   width: 21px;
   height: 19px;
@@ -258,11 +257,11 @@ img {
   top: 7px;
   left: 16px;
 }
-.user-navigation-item-entrance > a:hover {
+.user-navigation-item-entrance .user-entrance-link:hover {
   color: #323232;
   background-color: #f8f7f4;
 }
-.user-navigation-item-entrance > a:hover::before {
+.user-navigation-item-entrance:hover .user-entrance-link::before {
   content: "";
   width: 21px;
   height: 20px;
@@ -271,15 +270,14 @@ img {
   top: 5px;
   left: 16px;
 }
-.entrance {
-  display: none;
-}
-.user-navigation-item-entrance:hover a {
+.user-navigation-item-entrance:hover .user-entrance-link {
   color: #323232;
   background-color: #f8f7f4;
 }
-.user-navigation-item-entrance:hover .entrance,
-.user-navigation-item-entrance a:hover .entrance {
+.entrance {
+  display: none;
+}
+.user-navigation-item-entrance:hover .entrance {
   display: block;
   width: 277px;
   min-height: 200px;
