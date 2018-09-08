@@ -8,15 +8,6 @@ body {
   color: #ffffff;
   background-color: #849d8f;
 }
-
-body.blue {
-  background-color: #8996a6;
-}
-
-body.pink {
-  background-color: #9d8b84;
-}
-
 a {
   text-decoration: none;
 }
@@ -236,7 +227,8 @@ img {
 .search {
   display: none;
 }
-.user-navigation-item-search:hover .search {
+.user-navigation-item-search:hover .search,
+.user-navigation-item-search a:hover .search {
   display: block;
   width: 341px;
   padding: 0;
@@ -293,7 +285,8 @@ img {
 .entrance {
   display: none;
 }
-.user-navigation-item-entrance:hover .entrance {
+.user-navigation-item-entrance:hover .entrance,
+.user-navigation-item-entrance a:hover .entrance {
   display: block;
   width: 277px;
   min-height: 200px;
@@ -391,7 +384,8 @@ img {
 .baskets {
   display: none;
 }
-.user-navigation-item-basket-notempty:hover .baskets {
+.user-navigation-item-basket-notempty:hover .baskets,
+.user-navigation-item-basket-notempty a:hover .baskets {
   display: block;
   position: absolute;
   top: 50px;
@@ -498,10 +492,8 @@ img {
   line-height: 24px;
   padding-right: 26px;
 }
-.site-header {
-  width: 1200px;
-  min-height: 882px;
-  margin: 0 auto;
+.site-wrapper {
+  
   background-color: #849d8f;
   background-image: url("../img/background-raspberries.png");
   background-repeat: no-repeat;
@@ -510,22 +502,23 @@ img {
   transition: background-image 0.5s ease, background-color 0.5s ease;
   z-index: 1;
 }
-.site-header::before,
-.site-header::after {
+.site-wrapper::before,
+.site-wrapper::after {
   content: "";
 
   visibility: hidden;
 }
 
-.site-header::before {
+.site-wrapper::before {
   background-image: url("../img/background-lemon.png");
 }
 
-.site-header::after {
+.site-wrapper::after {
   background-image: url("../img/background-strawberry.png");
 }
 .container {
   width: 1200px;
+  min-height: 882px;
   margin: 0 auto;
   padding: 0;
 }
@@ -607,28 +600,28 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-#product-1:checked ~ .site-header {
+#product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/background-raspberries.png");
 }
 
-#product-2:checked ~ .site-header {
+#product-2:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url("../img/background-lemon.png");
 }
 
-#product-3:checked ~ .site-header {
+#product-3:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/background-strawberry.png");
 }
-#product-1:checked ~ .site-header #slide1,
-#product-2:checked ~ .site-header #slide2,
-#product-3:checked ~ .site-header #slide3 {
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
   display: block;
 }
-#product-1:checked ~ .site-header label[for="product-1"],
-#product-2:checked ~ .site-header label[for="product-2"],
-#product-3:checked ~ .site-header label[for="product-3"] {
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 .main-menu {
@@ -1746,4 +1739,7 @@ img {
 .developers a:hover,
 .developers a:active {
   color: #ffbc9e;
+}
+.button {
+  cursor: pointer;
 }
