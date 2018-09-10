@@ -1015,6 +1015,10 @@ justify-content: space-between;
   margin: 0;
   position: relative;
   z-index: 4;
+  margin-right: 26px;
+}
+.ice-cream-item:nth-child(4n) {
+  margin-right: 0;
 }
 .ice-cream-item img {
   margin-bottom: 5px;
@@ -1343,14 +1347,18 @@ justify-content: space-between;
   position: relative;
   margin: 0 auto;
   margin-top: 30px;
+  background: url(../img/map-with-pin.png) center no-repeat;
   
+}
+.map-iframe {
+  min-height: 430px;
 }
 .container-map-address {
   width: 1200px;
   min-height: 430px;
   margin: 0 auto;
   position: relative;
-  margin-top: -435px;
+  margin-top: -435px; 
 }
 .modal-map {
   width: 1200px;
