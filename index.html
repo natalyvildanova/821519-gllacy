@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize-min.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -179,7 +179,11 @@
           </fieldset>
         </form>
       </div>
+      </main>
       <div class="container-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056775!2d30.320853351805184!3d59.93871916896512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536595671476"
+          width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="container-map-address">
         <div class="map-address">
           <div class="map-address-item">
             <p class="name">Адрес главного офиса и офлайн-магазина:</p>
@@ -190,12 +194,13 @@
           </div>
           <a class="button" href="#">Форма обратной связи</a>
         </div>
-        <section class="modal-map">
+        </div>
+        <!-- <section class="modal-map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <img src="img/map-foto.jpg" width="1250" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        </section>
+        </section> -->
       </div>
-    </main>
+    
     <footer class="main-footer">
       <section class="social-networks">
         <ul class="social-networks-item">
@@ -260,21 +265,21 @@
     </footer>
   </div>
   <div class="modal-overlay"></div>
-    <form class="modal-feedback" method="get" action="https://echo.htmlacademy.ru/">
-      <fieldset class="modal-feedback-item">
-        <p>Мы обязательно вам ответим!</p>
-        <button class="modal-feedback-item-button" type="button">Кнопка "закрыть окно"</button>
-      </fieldset>
-      <fieldset class="modal-feedback-item">
-        <legend class="visually-hidden">Форма обратной связи</legend>
-        <input type="text" name="username" placeholder="Как вас зовут?">
-        <input type="text" name="usermail" placeholder="Ваша почта для ответа?">
-        <textarea name="userfeedback" id="feedback-text" cols="44" rows="6" placeholder="Напишите что-нибудь..."></textarea>
-      </fieldset>
-      <fieldset class="modal-feedback-item modal-feedback-item-submit">
-        <button class="button" type="submit">Отправить</button>
-      </fieldset>
-    </form>
+  <form class="modal-feedback" method="get" action="https://echo.htmlacademy.ru/">
+    <fieldset class="modal-feedback-item">
+      <p>Мы обязательно вам ответим!</p>
+      <button class="modal-feedback-item-button" type="button">Кнопка "закрыть окно"</button>
+    </fieldset>
+    <fieldset class="modal-feedback-item">
+      <legend class="visually-hidden">Форма обратной связи</legend>
+      <input type="text" name="username" placeholder="Как вас зовут?">
+      <input type="text" name="usermail" placeholder="Ваша почта для ответа?">
+      <textarea name="userfeedback" id="feedback-text" cols="44" rows="6" placeholder="Напишите что-нибудь..."></textarea>
+    </fieldset>
+    <fieldset class="modal-feedback-item modal-feedback-item-submit">
+      <button class="button" type="submit">Отправить</button>
+    </fieldset>
+  </form>
 </body>
 
 </html>
