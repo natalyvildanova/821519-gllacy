@@ -1596,7 +1596,7 @@ img {
 .map-iframe iframe {
   width: 100%;
   height: 430px;
-  : 0;
+  border: 0;
 }
 .container-map-address {
   width: 1200px;
