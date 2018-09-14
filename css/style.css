@@ -1487,9 +1487,9 @@ img {
   background: url(../img/thermometer-icon.png) 0 0 no-repeat;
 }
 .article {
-  min-width: 1146px;
+  min-width: 1150px;
   min-height: 220px;
-  margin: 0 27px;
+  margin: 0 12px;
   margin-top: -24px;
   padding: 0;
   display: -webkit-box;
@@ -1497,11 +1497,14 @@ img {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .new-article {
   width: 590px;
   height: 220px;
+  margin: 0;
+  margin-left: 15px;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -1531,7 +1534,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-left: 10px;
+  /*margin-left: 10px;*/
   padding: 5px;
   padding-left: 6px;
   background: url(../img/background-mail.png) 0 0 no-repeat;
