@@ -52,6 +52,7 @@ img {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  flex-wrap: wrap;
   margin-top: 25px;
 }
 .site-navigation-item:first-child {
@@ -1138,14 +1139,14 @@ img {
 }
 .features-item-strawberry {
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   color: #ffffff;
   background-color: #333333;
   background: url(../img/crimcon-back.png) 0 0 no-repeat;
 }
 .features-item-chocolate {
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   color: #ffffff;
   background-color: #333333;
   background: url(../img/choko-back.png) 0 0 no-repeat;
