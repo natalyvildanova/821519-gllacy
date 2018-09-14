@@ -1599,7 +1599,7 @@ img {
   background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
 }
 .container-map {
-  width: 100vw;
+ /* width: 100vw;*/
   min-height: 430px;
   position: relative;
   margin: 0 auto;
