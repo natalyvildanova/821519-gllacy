@@ -1064,8 +1064,9 @@ img {
   min-width: 1200px;
   position: relative;
   z-index: 4;
-  margin: 0 7px;
+  margin: 0;
   padding: 20px;
+  padding-left: 27px;
   margin-top: 626px;
   display: -webkit-box;
   display: -ms-flexbox;
