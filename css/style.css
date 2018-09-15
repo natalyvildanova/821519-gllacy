@@ -1061,13 +1061,11 @@ img {
   background-color: #ededed;
 }
 .features {
-  min-width: 1200px;
   position: relative;
   z-index: 4;
   margin: 0;
-  padding: 20px;
-  padding-left: 27px;
-  margin-top: 626px;
+  padding: 0 27px;
+  margin-top: 646px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1180,10 +1178,9 @@ img {
   color: #ffffff;
   background-color: #333333;
   background: url(../img/choko-back.png) 0 0 no-repeat;
-  margin-right: 54px;
 }
 .catalog {
-  margin: 20px 0;
+  margin: 40px 0;
   margin-bottom: -3px;
   padding: 0;
   width: 1200px;
